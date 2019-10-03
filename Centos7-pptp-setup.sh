@@ -40,6 +40,7 @@ then
   exit 0
 fi
 
+# Install epel, update and then install net-tools, wget and iptables. 
 yum install -y epel-release
 yum update -y
 yum install -y net-tools wget iptables-services 
