@@ -33,6 +33,7 @@ while [ "$1" != "" ]; do
   esac
 done
 
+# Ensure that we are root user
 if [ `id -u` -ne 0 ] 
 then
   echo "Need root, try with sudo"
